@@ -1,0 +1,23 @@
+# Installation
+
+The plugin does not need any installation.
+
+To execute plugin goals from the command line the plugins _groupId_ (**de.frvabe.maven.plugins**) and _artifactId_ (**frvabe-maven-plugin**) need to be known:
+
+    mvn de.frvabe.maven.plugins:frvabe-maven-plugin:${project.version}:hello-world <properties>
+
+By convention Maven can detect the plugin prefix (**frvabe**) from the artifactId. Thus _frvabe_ can be used instead of frvab e-maven-plugin to specify the artifactId. To also eliminate the groupId from the command line the _groupId_ can be added to the _&lt;pluginGroups&gt;_ section of the _settings.xml_ file (located at _C:\Users\\&lt;userName&gt;\.m2\settings.xml_).
+
+```xml
+<pluginGroups>
+  <!-- pluginGroup
+   | Specifies a further group identifier to use for plugin lookup.
+  <pluginGroup>com.your.plugins</pluginGroup>
+  -->
+  <pluginGroup>de.frvabe.maven.plugins</pluginGroup>
+</pluginGroups>
+```
+
+The command line call can than be shortened to
+
+    mvn frvabe:hello-world <properties>

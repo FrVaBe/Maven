@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Maven projects site (whether plugin or not) can be generated with the 
+     use of the 'Apache Maven Site Plugin' (https://maven.apache.org/plugins/maven-site-plugin). 
+     This is the Maven plugin site descriptor. The file describes the basic layout 
+     and the navigation links of the project (here plugin) documentation. Reference 
+     is: https://maven.apache.org/guides/development/guide-plugin-documentation.html#Site_Descriptor -->
+<project>
+     <!-- sites can be generated with different skins like described here: 
+          https://maven.apache.org/skins/index.html -->
+     <skin>
+          <groupId>org.apache.maven.skins</groupId>
+          <artifactId>maven-fluido-skin</artifactId>
+          <version>1.6</version>
+     </skin>
+     <!-- the site descriptor supports several configuration properties. 
+          Have a look here: https://maven.apache.org/plugins/maven-site-plugin/examples/sitedescriptor.html -->
+     <bannerRight>
+          <name>FrVaBe</name>
+          <src>images/frvabe.png</src>
+          <href>http://www.frvabe.de</href>
+     </bannerRight>
+     <publishDate position="right" />
+     <version position="right" />
+     <body>
+          <breadcrumbs>
+               <item name="FrVaBe" href="http://www.frvabe.de" />
+          </breadcrumbs>
+          <!-- The definition of the menue items; some references like 'index.html' 
+               and 'plugin-info.html' are generated because the 'Maven Plugin Plugin' is 
+               used to generated these resources. See: https://maven.apache.org/plugin-tools/maven-plugin-plugin/ -->
+          <menu name="Overview">
+               <item name="Introduction" href="index.html" />
+               <item name="Installation" href="installation.html" />
+               <item name="Goals" href="plugin-info.html" />
+               <item name="Usage" href="usage.html" />
+          </menu>
+     </body>
+</project>

@@ -1,0 +1,20 @@
+Usage
+=====
+
+hello-world goal
+-----------------
+
+This goal will most probably be executed from the command line. Have a look on how to [setup the plugin](installation.html) to be able to use the short command line format.
+
+The hello-world goal does not require a Maven project. It can be executed from the command line in the following ways
+
+_long syntax_
+
+```
+    > mvn de.frvabe.maven.plugins:frvabe-maven-plugin:${project.version}:hello-world
+```
+_short syntax_
+
+```
+    > mvn frvabe:hello-world
+```

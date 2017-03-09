@@ -1,0 +1,26 @@
+<!-- 
+    The project build lifecycle inside the eclipse IDE is independent from the 
+    Maven build lifecycle. Therefore eclipse needs to know how to handle 
+    Maven plugin executions during the build of a project by eclipse.
+    There are several ways how Maven Plugins can be made compatible with
+    the eclipse IDE. Am easy way is to place this metadata file into the
+    plugins META_INF/m2e folder. A detailed explanation can be found here:
+    http://www.eclipse.org/m2e/documentation/m2e-making-maven-plugins-compat.html
+ -->
+<lifecycleMappingMetadata>
+	<pluginExecutions>
+		<pluginExecution>
+			<pluginExecutionFilter>
+				<goals>
+					<goal>hello-world</goal>
+				</goals>
+			</pluginExecutionFilter>
+			<action>
+				<execute>
+					<runOnIncremental>false</runOnIncremental>
+					<runOnConfiguration>false</runOnConfiguration>
+				</execute>
+			</action>
+		</pluginExecution>
+	</pluginExecutions>
+</lifecycleMappingMetadata>
