@@ -163,7 +163,7 @@ The `mvn site` command calls the site phase of the site Lifecycle (see differenc
 
 # TL;DR
 
-The **[frvabe-maven-plugin](frvabe-maven-plugin)** is a sample Maven plugin implementation. The code provides comments which try to explain the main characteristics of a Maven plugin project. Take a look and discover the 'secrets' on your own ;-)
+The **frvabe-maven-plugin** is a sample Maven plugin implementation. The code provides comments which try to explain the main characteristics of a Maven plugin project. Take a look and discover the 'secrets' on your own ;-)
 
 Beside the plugin implementation the project also provides the content to generate a standard plugin documentation ([src/site](src/site)). Use `mvn install` and `mvn site` to generate the plugin documentation. Open the generated documentation at _target/site/index.html_ and explore how the plugin works.
 
